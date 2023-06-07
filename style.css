@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: bold; */
+    /* border: 1px solid red; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: gray;
+}
+
+.wrapper {
+    max-width: 450px;
+    background: #fff;
+    margin: 137px auto;
+    padding: 28px 0 30px;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.input-task {
+    height: 50px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.img-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+}
+
+.input-task input {
+    height: 100%;
+    width: 100%;
+    /* outline: none; */
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 0 55px 0 15px;
+    border: 1px solid black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.filters span {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.clear-btn {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-size: 14px;
+    font-weight: bold;
+    background: grey;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+.ul-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-task {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8px 25px;
+    gap: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    width: 90%;
+}
+
+#all,
+#pending,
+#completed,
+.clear-btn {
+    cursor: pointer;
+}
